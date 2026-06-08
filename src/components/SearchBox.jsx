@@ -1,8 +1,10 @@
 import { ImSearch } from "react-icons/im";
 
-function SearchBox({ search, setSearch,serachHandler }) {
+import styles from "./SearchBox.module.css";
+
+function SearchBox({ search, setSearch, serachHandler }) {
   return (
-    <div>
+    <div className={styles.search}>
       <input
         type="text"
         placeholder="Enter title"
